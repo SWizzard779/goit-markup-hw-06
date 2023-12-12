@@ -355,6 +355,83 @@ screen and (min-device-pixel-ratio: 2) {
     max-width: 767px;
 }
 
+/*----Third Section----*/
+
+.team-title {
+    color: #2E2F42;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.team-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.team-list { 
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-container {
+    padding-bottom: 32px;
+}
+
+.team-header {
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.team-paragraph {
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.social-items {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.social-link-section {
+    width: 100%;
+    height: 100%;
+    fill: #F4F4FD;
+    background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-link-section:hover,
+.social-link-section:focus {
+    background-color: #404BBF;
+}
+
 /*------TABLET STYLES-----*/
 /*-----TS HEADER-----*/
 
@@ -482,6 +559,20 @@ screen and (min-device-pixel-ratio: 2) {
         align-items: flex-start;
     }
 
+    /*------TS Third Section------*/
+
+    .team-menu {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 64px;
+    }
+
+    .team-list { 
+        width: calc((100% - 48px)/2);
+        max-width: 264px;
+    }
 
 }
 
@@ -582,6 +673,28 @@ screen and (min-device-pixel-ratio: 2) {
     .paragraph {
         text-align: left;
         font-size: 16px;
+    }
+
+    /*-----DS Third Section------*/
+
+    .team-menu {
+        display: flex;
+        gap: 24px;
+    }
+
+    .team-list { 
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team-header {
+        text-align: center;
+    }
+    
+    .team-paragraph {
+        text-align: center;
     }
 
 }}
