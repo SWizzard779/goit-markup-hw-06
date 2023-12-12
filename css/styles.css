@@ -315,6 +315,46 @@ screen and (min-device-pixel-ratio: 2) {
     background-color: #404BBF;
 }
 
+/*-----Second Sections------*/
+
+.svg-container {
+    display: none;
+}
+
+.list-features {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.list-features-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.strategy {
+    color: #2E2F42 ;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.paragraph {
+    color: #434455;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    align-self: flex-start;
+    max-width: 767px;
+}
+
 /*------TABLET STYLES-----*/
 /*-----TS HEADER-----*/
 
@@ -418,7 +458,7 @@ screen and (min-device-pixel-ratio: 2) {
             background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), 
             url('../images/hero-tablet@2x.jpg');
         }
-
+    }
 
     .title {
         font-size: 56px;
@@ -426,6 +466,20 @@ screen and (min-device-pixel-ratio: 2) {
         max-width: 617px;
         margin: 0 auto 36px auto;
         text-transform: none;
+    }
+
+    /*-----TS Second Section-----*/
+    .list-features {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+        flex-direction: row;
+    }
+    
+    .list-features-item {
+        width: calc((100% - 24px) / 2);
+        align-items: flex-start;
     }
 
 
@@ -468,6 +522,8 @@ screen and (min-device-pixel-ratio: 2) {
         bottom: -5px;
     }
 
+    /*-----DS First Section-----*/
+
     .section:first-child {
         padding-top: 188px;
         padding-bottom: 188px;
@@ -489,5 +545,43 @@ screen and (min-device-pixel-ratio: 2) {
         margin: 0 auto 48px auto;
     }
 
+    /*------DS Second Section-----*/
+    .svg-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     
+        height: 112px;
+        width: 264px;
+        background-color: #F4F4FD;
+        fill: #2E2F42;
+        border-radius: 4px;
+        border: 1px solid #8E8F99;
+        padding: 24px 100px;
+        margin-bottom: 8px;
+    }
+
+    .list-features {
+        gap: 24px;
+    }
+    
+    .list-features-item {
+        width: calc((100% - 72px) / 4);
+        justify-content: unset;
+    }
+
+    .strategy {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+    
+    .paragraph {
+        text-align: left;
+        font-size: 16px;
+    }
+
 }}
