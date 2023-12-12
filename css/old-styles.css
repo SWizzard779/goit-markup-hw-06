@@ -200,7 +200,7 @@ screen and (min-device-pixel-ration: 2) and (min-width: 1158px) {
 
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px),
-screen and (min-device-pixel-ration: 2) and (min-width: 768px) {
+screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     .section:first-child {
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), 
         url('../images/hero-tablet@2x.jpg');
