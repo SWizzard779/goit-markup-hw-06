@@ -432,6 +432,63 @@ screen and (min-device-pixel-ratio: 2) {
     background-color: #404BBF;
 }
 
+/*-----Fourth Section-----*/
+
+.portfolio-header {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+}
+
+.portfolio-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.overlay {
+    display: none;
+}
+
+.list-portfolio {
+    border: 1px solid #F4F4FD;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+        
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-portfolio:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.list-portfolio .strategy {
+    color: #2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.portfolio-subheader {
+    text-align: start;
+    margin-bottom: 16px;
+}
+
+.portfolio-paragraph {
+    text-align: left;
+    font-weight: 400;
+}
+
+.portfolio-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
 /*------TABLET STYLES-----*/
 /*-----TS HEADER-----*/
 
@@ -574,7 +631,25 @@ screen and (min-device-pixel-ratio: 2) {
         max-width: 264px;
     }
 
-}
+    /*-----Fourth Section-----*/
+
+    .portfolio-menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+
+    .list-portfolio {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .list-portfolio .strategy {
+        line-height: 1.5;
+
+    }
 
 
 
@@ -695,6 +770,47 @@ screen and (min-device-pixel-ratio: 2) {
     
     .team-paragraph {
         text-align: center;
+    }
+
+    /*-----DS Fourth Section-----*/
+
+    .portfolio-menu {
+        row-gap: 48px;
+    }
+
+
+    .list-portfolio {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .list-portfolio .strategy {
+        line-height: 1.2;
+    }
+
+    .overlay-box {
+        position: relative;
+        width: 360px;
+        height: 300px;
+        overflow: hidden;
+    }
+    
+    .overlay { 
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #4D5AE5;
+        color:#F4F4FD;
+        padding: 40px 32px;
+    
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translateY(100%);
+    }
+    
+    .overlay-box:hover .overlay {
+        transform: translateY(0%);
     }
 
 }}
