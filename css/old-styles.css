@@ -465,16 +465,11 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 
 .footer-container {
     display: flex;
-    align-items: baseline;
-}
-
-.logo-container {
-    margin-right: 120px;
 }
 
 .footer .paragraph {
     color: #F4F4FD;
-    width: 264px;
+    text-align: center;
 }
 
 .logo-footer {
@@ -494,11 +489,18 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 }
 
 .footer-paragraph {
+    text-align: center;
     color:#FFF;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02;
     margin-bottom: 16px;
+}
+
+.socials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .socials-footer {
@@ -524,17 +526,15 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 }
 
 .subscription-container {
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .subscription-form {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
-}
-
-.subscription-label {
     gap: 24px;
 }
 
