@@ -1030,6 +1030,34 @@ screen and (min-device-pixel-ratio: 2) {
     gap: 24px;
 }
 
+/*-----TS Modal Contact Window-----*/
+    
+.comment-input {
+    min-height: 120px;
+}
+
+.contact-position-comment {
+    width: 360px;
+}
+
+.contact-input {
+    width: 100%;
+    height: 58px;
+}
+
+.label-container {
+    width: 360px;
+}
+
+.contact-data-label {
+    margin-bottom: 8px;
+}
+
+.modal-container {
+    width: 408px;
+    min-height: 584px;
+}
+
 /*-----DESKTOP STYLES-----*/
 /*----DS HEADER-----*/
 @media screen and (min-width: 1158px) {
