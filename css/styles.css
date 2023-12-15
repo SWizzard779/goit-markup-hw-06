@@ -197,7 +197,7 @@ main {
 /*------HEADER STYLES------*/
 
 .container {
-    max-width: 288px;
+    max-width: 320px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -240,7 +240,7 @@ main {
 .header-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+   /*align-items: center;*/
 }
 
 .header {
@@ -371,15 +371,12 @@ screen and (min-device-pixel-ratio: 2) {
 .team-menu {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 72px;
 }
 
 .team-list { 
     background: #FFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 32px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -387,6 +384,7 @@ screen and (min-device-pixel-ratio: 2) {
 
 .team-container {
     padding-bottom: 32px;
+    padding-top: 32px;
 }
 
 .team-header {
@@ -455,7 +453,6 @@ screen and (min-device-pixel-ratio: 2) {
 }
 
 .list-portfolio {
-    border: 1px solid #F4F4FD;
     background: #FFF;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
         
@@ -1070,6 +1067,10 @@ screen and (min-device-pixel-ratio: 2) {
         align-items: center;
     }
 
+    .nav-list {
+        margin-left: 0;
+    }
+
     .logo-header .logo {
         margin-right: 76px;
     }
@@ -1094,6 +1095,11 @@ screen and (min-device-pixel-ratio: 2) {
     }
 
     /*-----DS First Section-----*/
+
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 
     .section:first-child {
         padding-top: 188px;
@@ -1236,6 +1242,19 @@ screen and (min-device-pixel-ratio: 2) {
 
     .form-input::placeholder {
         color: #FFF;
+    }
+
+    /*-----DS Modal Contact Window-----*/
+    .contact-input {
+        height: 40px;
+    }
+
+    .modal-container {
+        padding: 72px 24px 24px 24px;
+    }
+
+    .contact-position-comment {
+        margin-bottom: 16px;
     }
 
 }}
